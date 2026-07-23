@@ -1,10 +1,11 @@
 {
-  "name": "ArenaJoin",
+  "name": "ArenaJoin 2027",
   "short_name": "ArenaJoin",
-  "description": "Festival de cultura digital em desenvolvimento para Joinville.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#05070b",
-  "theme_color": "#05070b",
-  "icons": [{"src":"assets/favicon.svg","sizes":"any","type":"image/svg+xml"}]
+  "background_color": "#050807",
+  "theme_color": "#050807",
+  "icons": [
+    { "src": "assets/simbolo-aj-transparent.png", "sizes": "512x512", "type": "image/png" }
+  ]
 }

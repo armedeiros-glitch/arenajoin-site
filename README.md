@@ -1,61 +1,50 @@
-# ArenaJoin Site V6
+# ArenaJoin Site V8
 
-Versão com escala tipográfica, composição desktop/mobile e aplicações de marca revisadas.
+Landing page institucional da ArenaJoin 2027, redesenhada para o novo posicionamento:
 
-# ArenaJoin Site V4
+**Festival de Cultura Digital e Audiovisual**
 
-Landing page institucional da ArenaJoin com audiovisual em posição estratégica para sustentar o projeto cultural sem afirmar aprovação, programação ou local confirmados.
+O audiovisual é o eixo central. Games, IA, creators, fotografia, cinema, conteúdo e experiências digitais aparecem conectados às novas formas de criação e narrativa.
 
-## Principais mudanças da V4
+## Arquitetura
 
-- Audiovisual incluído no hero.
-- Seção editorial “Cultura digital em movimento” no primeiro terço da página.
-- Núcleo Audiovisual apresentado como linguagem transversal, não como arena física confirmada.
-- Oficina de Criação de Personagens e Construção de Figurinos em destaque.
-- Audiovisual e Novas Narrativas passa a abrir a grade de universos.
-- Cultura e formação reorganizadas para território, acesso, acessibilidade e acervo.
-- Formulários preparados para mapear interesses audiovisuais.
-- FAQ específico sobre o papel do audiovisual.
-- Hero conceitual reinterpretado como lente, enquadramento e produção, reduzindo a leitura de “portal gamer”.
-
-## Publicação local
-
-Abra `index.html` ou rode um servidor local:
-
-```bash
-python -m http.server 8080
-```
-
-Acesse `http://localhost:8080`.
-
-## Publicação no GitHub Pages
-
-1. Crie ou escolha um repositório.
-2. Envie todos os arquivos desta pasta para a raiz.
-3. Em **Settings > Pages**, selecione a branch principal e a pasta raiz.
-4. Configure o domínio próprio.
+1. Hero
+2. Conceito
+3. Jornada: ArenaJoin na Escola → ArenaJoin Festival
+4. Experiências: Criar, Experimentar, Aprender e Conectar
+5. Propósito cultural em Joinville
+6. Parcerias
+7. Contato
 
 ## Publicação no Cloudflare Pages
 
-- Framework preset: `None`.
-- Build command: vazio.
-- Output directory: `/`.
-- Para formulários, configure `LEADS_WEBHOOK_URL` nas variáveis do projeto.
+- Framework: `None`
+- Build command: vazio ou `exit 0`
+- Output directory: `.`
+- Production branch: `main`
 
-## Pendências antes da versão pública
+## Vídeos opcionais
 
-- Substituir `assets/logo-arenajoin.svg` e `assets/favicon.svg` pelos arquivos vetoriais oficiais.
-- Definir o destino real dos formulários.
-- Confirmar domínio e atualizar canonical, Open Graph, sitemap e robots.
-- Produzir hero em vídeo próprio.
-- Revisar política de privacidade com os dados do responsável legal.
+O site funciona com os pôsteres SVG. Para ativar os vídeos, adicione:
 
-## Estrutura
+- `assets/media/hero-audiovisual.webm` ou `.mp4`
+- `assets/media/escola-loop.webm` ou `.mp4`
+- `assets/media/festival-loop.webm` ou `.mp4`
 
-- `index.html`: landing page.
-- `styles.css`: identidade, responsividade e motion.
-- `script.js`: navegação, formulários, mídia opcional e acessibilidade.
-- `site.config.js`: links e endpoint.
-- `functions/api/submit.js`: função para formulários em Cloudflare Pages.
-- `assets/`: logo provisório, posters e mídia futura.
-- `docs/`: arquitetura, direção audiovisual e informações provisórias.
+Use loops curtos, sem fala e com até 8–12 MB por arquivo. Qualquer conteúdo falado deve ter legenda.
+
+## Formulário
+
+A função está em `functions/api/submit.js`. Configure no Cloudflare:
+
+- `LEADS_WEBHOOK_URL`
+- `LEADS_WEBHOOK_TOKEN` (opcional)
+
+Sem o webhook, o formulário exibirá que o canal de envio ainda não foi configurado.
+
+## Informações provisórias
+
+- Data: 17, 18 e 19 de setembro de 2027, prevista.
+- Cidade: Joinville, SC.
+- Local, programação, escolas e participantes ainda não confirmados.
+- Não comunicar aprovação no FMIC antes da confirmação oficial.
