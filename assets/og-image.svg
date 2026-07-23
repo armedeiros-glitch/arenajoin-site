@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><radialGradient id="og" cx="78%" cy="40%" r="58%"><stop offset="0" stop-color="#00e5ff" stop-opacity=".18"/><stop offset=".45" stop-color="#00ff8f" stop-opacity=".08"/><stop offset="1" stop-color="#05070b" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1200" height="630" fill="#05070b"/>
+  <rect width="1200" height="630" fill="url(#og)"/>
+  <g transform="translate(920 310)" fill="none"><circle r="240" stroke="#00e5ff" stroke-opacity=".25"/><circle r="175" stroke="#00ff8f" stroke-opacity=".42" stroke-dasharray="6 14"/><circle r="95" stroke="#783cff" stroke-opacity=".34"/></g>
+  <text x="70" y="245" fill="#f4f7f8" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="900" letter-spacing="-8">ARENA</text>
+  <text x="446" y="245" fill="#00ff8f" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="900" letter-spacing="-8">JOIN</text>
+  <text x="72" y="335" fill="#00ff8f" font-family="Arial, Helvetica, sans-serif" font-size="62" font-style="italic" font-weight="900">EXPERIMENTE O FUTURO.</text>
+  <text x="75" y="430" fill="#aab6bd" font-family="Arial, Helvetica, sans-serif" font-size="27">17, 18 e 19 de setembro de 2027 · data prevista</text>
+  <text x="75" y="475" fill="#aab6bd" font-family="Arial, Helvetica, sans-serif" font-size="27">Joinville, Santa Catarina</text>
+</svg>
